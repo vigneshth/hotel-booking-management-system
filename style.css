@@ -1,0 +1,194 @@
+/* ======================================= */
+/* STATIC/CSS/STYLE.CSS - PROFESSIONAL LOOK */
+/* ======================================= */
+
+:root {
+    /* Define color palette */
+    --primary-color: #007bff; /* Blue */
+    --secondary-color: #6c757d; /* Gray */
+    --accent-color: #28a745; /* Green for success/buttons */
+    --background-light: #f8f9fa;
+    --border-color: #dee2e6;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-light);
+    color: #343a40;
+    line-height: 1.5;
+}
+
+/* --- Header & Navigation --- */
+header {
+    background: var(--primary-color);
+    color: white;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+    font-size: 1.1em;
+}
+
+header nav a:hover {
+    color: #ffc107; /* Light yellow on hover */
+}
+
+main {
+    padding: 40px 50px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #343a40;
+    font-size: 1.8em;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+/* --- Hotel Card Styling (Homepage & Index) --- */
+.hotel-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.hotel-card {
+    background: white;
+    border: 1px solid var(--border-color);
+    padding: 25px;
+    border-radius: 8px;
+    width: calc(33.333% - 20px); /* 3 cards per row */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s;
+}
+
+.hotel-card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-card h3 {
+    color: var(--primary-color);
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+/* --- Button Styling --- */
+button {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button:hover { 
+    background-color: #1e7e34; 
+}
+
+/* --- Table Styling (Bookings/Payments/Hotels) --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid var(--border-color);
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #e9ecef;
+    color: var(--secondary-color);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* --- Form Styling --- */
+form {
+    max-width: 500px;
+    padding: 30px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin: 30px auto;
+}
+
+input[type="text"], input[type="password"], input[type="number"], input[type="date"], select {
+    /* Ensures inputs match the form width */
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+/* Flash Messages */
+.flashes {
+    /* Style the flash messages consistently */
+    list-style: none;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    border-left: 5px solid;
+}
+.flash-1 { /* Success */
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+}
+.flash-2 { /* Error */
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #f5c6cb;
+}
+/* In static/css/style.css */
+
+/* Center the flash message container */
+.flash-message-container {
+    max-width: 600px;
+    margin: 20px auto; /* Centers horizontally */
+    text-align: center;
+}
+
+/* Ensure the list item spans the container width and is styled */
+.flashes {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.flashes li {
+    padding: 15px;
+    margin-bottom: 5px;
+    text-align: center; /* Center the text inside the flash message */
+    /* Add existing styling for flash-1 (success) and flash-2 (error) here */
+}

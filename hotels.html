@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}Hotel Management{% endblock %}
+
+{% block content %}
+    <h2>🏢 Hotel Management Dashboard</h2>
+    <p><a href="{{ url_for('add_hotel') }}"><button style="background: #007bff;">+ Add New Hotel</button></a></p>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Hotel Name</th>
+                <th>Type</th>
+                <th>Rent (₹)</th>
+                <th>Manager ID</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for hotel in hotels %}
+            <tr>
+                <td>{{ hotel['hotl_id'] }}</td>
+                <td>{{ hotel['hotl_name'] }}</td>
+                <td>{{ hotel['hotl_type'] }}</td>
+                <td>{{ hotel['hotl_rent'] }}</td>
+                <td>{{ hotel['hotl_manager_id'] }}</td>
+                <td>
+                    <a href="{{ url_for('edit_hotel', hotl_id=hotel['hotl_id']) }}"><button style="background: #ffc107;">Edit</button></a>
+                    
+                    <a href="{{ url_for('delete_hotel', hotl_id=hotel['hotl_id']) }}" 
+                       onclick="return confirm('WARNING: Deleting {{ hotel.hotl_name }} will fail if it has active bookings. Proceed?');">
+                        <button style="background: #dc3545;">Delete</button>
+                    </a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

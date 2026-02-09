@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Hotel Booking System{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    {% block head_extras %}{% endblock %}
+</head>
+<body>
+    <header>
+        <h1>🏨 Hotel Booking System</h1>
+        <nav>
+            <a href="{{ url_for('index') }}">Home</a>
+            
+            {% if session.logged_in %}
+                <a href="{{ url_for('bookings') }}">Bookings Report</a>
+                <a href="{{ url_for('hotels') }}">Manage Hotels</a>
+                <a href="{{ url_for('customers') }}">Customers</a> 
+                <a href="{{ url_for('payments') }}">Payments</a> 
+                <a href="{{ url_for('logout') }}">Logout ({{ session.username }})</a> 
+            {% else %}
+                <a href="{{ url_for('login') }}">Staff Login</a>
+            {% endif %}
+            
+        </nav>
+    </header>
+    <main>
+        <div class="flash-message-container"> 
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul class="flashes">
+                {% for message in messages %}
+                  <li class="flash-{{ loop.index }}"> {{ message }} </li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+            {% endwith %}
+        </div>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    {% block scripts %}
+    {% endblock %}
+</body>
+</html>

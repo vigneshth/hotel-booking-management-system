@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Record Payment{% endblock %}
+
+{% block content %}
+    <h2>💰 Record New Payment</h2>
+    
+    <form method="POST" action="{{ url_for('add_payment') }}">
+        <label for="customer">Customer ID:</label>
+        <input type="number" id="customer" name="cus_id" placeholder="Customer ID linked to payment" required> 
+        
+        <label for="amount">Amount (₹):</label>
+        <input type="number" step="0.01" id="amount" name="pay_amt" required>
+        
+        <label for="date">Payment Date:</label>
+        <input type="date" id="date" name="pay_date" value="{{ today }}" required>
+
+        <label for="desc">Description:</label>
+        <input type="text" id="desc" name="pay_desc" placeholder="e.g., Full payment for booking #102">
+        
+        <button type="submit" style="background: #28a745;">Record Payment</button>
+    </form>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Customer Management List{% endblock %}
+
+{% block content %}
+    <h2>👥 Customer List</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Mobile</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for cust in customers %}
+            <tr>
+                <td>{{ cust['cus_id'] }}</td>
+                <td>{{ cust['cus_name'] }}</td>
+                <td>{{ cust['cus_mobile'] }}</td>
+                <td>{{ cust['cus_email'] }}</td>
+                <td>{{ cust['cus_add'] }}</td>
+                <td>
+                    <a href="{{ url_for('edit_customer', cus_id=cust['cus_id']) }}"><button style="background: #ffc107;">Edit</button></a>
+                    <a href="{{ url_for('delete_customer', cus_id=cust['cus_id']) }}" 
+                       onclick="return confirm('WARNING: Deleting {{ cust['cus_name'] }} will fail if they have bookings/payments. Proceed?');">
+                        <button style="background: #d03f4d;">Delete</button>
+                    </a>
+                    </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

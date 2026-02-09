@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Add New Hotel{% endblock %}
+
+{% block content %}
+    <h2>➕ Add New Hotel</h2>
+    
+    <form method="POST" action="{{ url_for('add_hotel') }}">
+        <label for="name">Hotel Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="type">Type (e.g., 5-Star):</label>
+        <input type="text" id="type" name="type" required>
+
+        <label for="desc">Description:</label>
+        <input type="text" id="desc" name="desc" required>
+        
+        <label for="rent">Room Rent (₹):</label>
+        <input type="number" step="1" id="rent" name="rent" required>
+        
+        <button type="submit" style="background: #007bff;">Add Hotel</button>
+    </form>
+{% endblock %}

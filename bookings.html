@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Bookings Report (VIEW){% endblock %}
+
+{% block content %}
+    <h2>🧾 All Customer Bookings Report (Using SQL View)</h2>
+    <a href="{{ url_for('add_booking') }}"><button style="background: #28a745;">+ Add New Booking</button></a>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Customer Name</th>
+                <th>Mobile</th>
+                <th>Address</th>       <th>Hotel Name</th>
+                <th>Room Type</th>
+                <th>Rent (₹)</th>
+                <th>Payment Amt (₹)</th>
+                <th>Payment Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for book in bookings %}
+            <tr>
+                <td>{{ book['book_id'] }}</td>
+                <td>{{ book['Customer_Name'] }}</td>
+                <td>{{ book['Customer_Mobile'] }}</td>
+                <td>{{ book['Customer_Address'] }}</td>  <td>{{ book['Hotel_Name'] }}</td>
+                <td>{{ book['Room_Rent'] }}</td>
+                <td>{{ book['Payment_Amount'] or 'N/A' }}</td>
+                <td>{{ book['Payment_Date'] or 'N/A' }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

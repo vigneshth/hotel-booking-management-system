@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Staff Login{% endblock %}
+
+{% block content %}
+    <form id="loginForm" method="POST" action="{{ url_for('login') }}">
+        
+        <h2>Access Control</h2>
+
+        {% if error %}
+            <p style="color: red; font-weight: bold;">{{ error }}</p>
+        {% endif %}
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <button type="submit">Log In</button>
+        
+        <div id="loginError" style="margin-top: 15px; border-radius: 4px;"></div>
+    </form>
+{% endblock %}
+
+{% block scripts %}
+    <script src="{{ url_for('static', filename='js/login.js') }}"></script> 
+{% endblock %}
