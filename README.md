@@ -6,6 +6,24 @@ This project demonstrates strong DBMS concepts such as relational schema design,
 
 ---
 
+## 📸 Project Output Screenshots
+
+<p align="center">
+  <img src="screenshots/1%20(1).jpeg" width="45%">
+  <img src="screenshots/1%20(2).jpeg" width="45%">
+</p>
+
+<p align="center">
+  <img src="screenshots/1%20(3).jpeg" width="45%">
+  <img src="screenshots/1%20(4).jpeg" width="45%">
+</p>
+
+<p align="center">
+  <img src="screenshots/1%20(5).jpeg" width="45%">
+  <img src="screenshots/1%20(6).jpeg" width="45%">
+</p>
+
+
 ## System Overview
 
 The system manages:
