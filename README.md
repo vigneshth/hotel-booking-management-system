@@ -12,7 +12,8 @@ This project demonstrates strong DBMS concepts such as relational schema design,
   <img src="screenshots/1%20(2).jpeg" width="45%">
   <img src="screenshots/1%20(1).jpeg" width="45%">
 </p>
-#### ----CRUD Operations----
+# **----CRUD Operations----**
+
 ### 🧾 User Registration(Creation)
 <p align="center">
   <img src="screenshots/1%20(3).jpeg" width="45%">
