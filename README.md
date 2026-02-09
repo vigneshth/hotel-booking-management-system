@@ -5,22 +5,42 @@ The Hotel Booking and Management System is a database-driven application designe
 This project demonstrates strong DBMS concepts such as relational schema design, primary and foreign key relationships, normalization, and SQL queries, along with a basic backend layer and a simple web interface.
 
 ---
-
 ## 📸 Project Output Screenshots
 
+### 🏠 Home Page
 <p align="center">
-  <img src="screenshots/1%20(2).jpeg" width="45%">
   <img src="screenshots/1%20(1).jpeg" width="45%">
+  <img src="screenshots/1%20(2).jpeg" width="45%">
 </p>
 
+### 🧾 User Registration
 <p align="center">
   <img src="screenshots/1%20(3).jpeg" width="45%">
   <img src="screenshots/1%20(4).jpeg" width="45%">
 </p>
 
+### 🏨 Available Hotels
 <p align="center">
   <img src="screenshots/1%20(5).jpeg" width="45%">
   <img src="screenshots/1%20(6).jpeg" width="45%">
+</p>
+
+### 📅 Booking Process
+<p align="center">
+  <img src="screenshots/1%20(7).jpeg" width="45%">
+  <img src="screenshots/1%20(8).jpeg" width="45%">
+</p>
+
+### ✅ Booking Confirmation
+<p align="center">
+  <img src="screenshots/1%20(9).jpeg" width="45%">
+  <img src="screenshots/1%20(10).jpeg" width="45%">
+</p>
+
+### 🔐 Staff Login & Dashboard
+<p align="center">
+  <img src="screenshots/1%20(11).jpeg" width="45%">
+  <img src="screenshots/1%20(12).jpeg" width="45%">
 </p>
 
 
