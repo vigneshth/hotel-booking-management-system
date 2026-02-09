@@ -12,35 +12,36 @@ This project demonstrates strong DBMS concepts such as relational schema design,
   <img src="screenshots/1%20(2).jpeg" width="45%">
   <img src="screenshots/1%20(1).jpeg" width="45%">
 </p>
-
-### 🧾 User Registration
+#### ----CRUD Operations----
+### 🧾 User Registration(Creation)
 <p align="center">
   <img src="screenshots/1%20(3).jpeg" width="45%">
   <img src="screenshots/1%20(4).jpeg" width="45%">
 </p>
 
-### 🏨 Available Hotels & Customer Booking Reports
+### 🏨 Available Hotels & Customer Booking Reports(Reading)
 <p align="center">
   <img src="screenshots/1%20(5).jpeg" width="45%">
   <img src="screenshots/1%20(6).jpeg" width="45%">
 </p>
 
-### 📅 Booking Process
+### 📅 Booking Process(Update)
 <p align="center">
   <img src="screenshots/1%20(7).jpeg" width="45%">
   <img src="screenshots/1%20(8).jpeg" width="45%">
 </p>
 <p align="center">
   <img src="screenshots/1%20(9).jpeg" width="45%">
-  <img src="screenshots/1%20(10).jpeg" width="45%">
+  
 </p>
 
-### CRUD Operation
+### ✏️ Deletion of records
 <p align="center">
   <img src="screenshots/1%20(11).jpeg" width="45%">
+  <img src="screenshots/1%20(10).jpeg" width="45%">
   </p>
   
-### Log Out
+### 🔐 Log Out
   <p align="center">
   <img src="screenshots/1%20(12).jpeg" width="45%">
 </p>
