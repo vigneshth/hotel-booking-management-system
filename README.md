@@ -19,7 +19,7 @@ This project demonstrates strong DBMS concepts such as relational schema design,
   <img src="screenshots/1%20(4).jpeg" width="45%">
 </p>
 
-### 🏨 Available Hotels
+### 🏨 Available Hotels & Customer Booking Reports
 <p align="center">
   <img src="screenshots/1%20(5).jpeg" width="45%">
   <img src="screenshots/1%20(6).jpeg" width="45%">
@@ -30,16 +30,18 @@ This project demonstrates strong DBMS concepts such as relational schema design,
   <img src="screenshots/1%20(7).jpeg" width="45%">
   <img src="screenshots/1%20(8).jpeg" width="45%">
 </p>
-
-### ✅ Booking Confirmation
 <p align="center">
   <img src="screenshots/1%20(9).jpeg" width="45%">
   <img src="screenshots/1%20(10).jpeg" width="45%">
 </p>
 
-### 🔐 Staff Login & Dashboard
+### CRUD Operation
 <p align="center">
   <img src="screenshots/1%20(11).jpeg" width="45%">
+  </p>
+  
+### Log Out
+  <p align="center">
   <img src="screenshots/1%20(12).jpeg" width="45%">
 </p>
 
