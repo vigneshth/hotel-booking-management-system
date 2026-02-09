@@ -9,8 +9,8 @@ This project demonstrates strong DBMS concepts such as relational schema design,
 ## 📸 Project Output Screenshots
 
 <p align="center">
-  <img src="screenshots/1%20(1).jpeg" width="45%">
   <img src="screenshots/1%20(2).jpeg" width="45%">
+  <img src="screenshots/1%20(1).jpeg" width="45%">
 </p>
 
 <p align="center">
